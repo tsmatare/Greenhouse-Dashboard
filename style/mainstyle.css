@@ -1,0 +1,13 @@
+conwid{
+    width: 50% !important;
+}
+.donsee{
+    display:none;
+}
+.see{}
+
+.gonzo:hover{
+    background-color: grey;
+    color: white;
+    font-size: 20px;
+}
