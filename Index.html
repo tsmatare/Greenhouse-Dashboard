@@ -17,7 +17,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="language" content="English">
 <meta name="author" content="Takuda Sean Matare">
-
+<link rel="manifest" href="manifest.webmanifest" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
           <link href="style/mainstyle.css" rel="stylesheet">
 
@@ -111,5 +111,12 @@
     <br>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="script/mainjava.js"></script>
+    <script>
+    if('serviceWorker' in navigator) {
+        navigator.serviceWorker
+            .register('/sw.js')
+            .then(function() { console.log(" Your service worker is now registered"); });
+    }
+</script>
 </body>
 </html>
